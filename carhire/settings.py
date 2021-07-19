@@ -77,13 +77,12 @@ WSGI_APPLICATION = 'carhire.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
+        'HOST': 'localhost',
         'NAME': 'carhire_db',
         'USER': 'postgres',
-        'PASSSWORD':'fralorraine69',
-        'HOST': 'localhost',
+        'PASSWORD': 'fralorraine69',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
