@@ -76,8 +76,11 @@ WSGI_APPLICATION = 'carhire.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'carhire_db',
+        'USER': 'postgres',
+        'PASSSWORD':'fralorraine69',
+        'HOST': 'localhost',
     }
 }
 
