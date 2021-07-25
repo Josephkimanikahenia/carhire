@@ -1,21 +1,22 @@
 from django.db import models
 from datetime import datetime
 # Create your models here.
-class car(models.Model):
+class Car(models.Model):
+    
     county_choice = {
-       'KE-01': 'Baringo',
-        'KE-17': 'Kisumu',
-        'KE-26': 'Meru',
-        'KE-13': 'Kiambu',
-        'KE-40': 'Tana River',
-        'KE-06': 'Embu',
-        'KE-26': 'Mombasa',
+        'KE-01', 'Baringo',
+        'KE-17', 'Kisumu',
+        'KE-26', 'Meru',
+        'KE-13', 'Kiambu',
+        'KE-40', 'Tana River',
+        'KE-06', 'Embu',
+        'KE-26', 'Mombasa',
 
     }
 
     year_choice = []
-    for y in range(2000, (datetime.now().year+1)):
-        year_choice.append((r, r))
+    for r in range(2000, (datetime.now().year+1)):
+        year_choice.append((r,r))
 
     features_choices = (
         ('Cruise Control', 'Cruise Control'),
@@ -61,25 +62,14 @@ class car(models.Model):
     transmission = models.CharField(max_length=100)
     interior = models.CharField(max_length=100)
     kilometer = models.IntegerField()
-    doors = models.IntegerField(choices=door_choices, max_length=100)
-    passengers = models.IntegerField(max_length=100)
+    doors = models.IntegerField(choices=door_choices)
+    passengers = models.IntegerField()
     vin_no = models.CharField(max_length=100)
-    milage = models.IntegerField(max_length=100)
+    milage = models.IntegerField()
     fuel_type = models.CharField(max_length=100)
     no_of_owners = models.CharField(max_length=100)
     is_featured = models.BooleanField(max_length=100)
     created_date = models.DateTimeField(default=datetime.now, blank=True)
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     
     
