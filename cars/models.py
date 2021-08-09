@@ -14,8 +14,7 @@ class Car(models.Model):
         'KE-26', 'Meru',
         'KE-13', 'Kiambu',
         'KE-40', 'Tana River',
-        'KE-06', 'Embu',
-        'KE-26', 'Mombasa',
+
 
     }
 
