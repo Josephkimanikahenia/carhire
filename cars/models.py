@@ -1,7 +1,7 @@
 from django.db import models
 from datetime import datetime
-#from ckeditor.fields import RichTextField
-#from multiselectfield import MultiSelectField
+from ckeditor.fields import RichTextField
+from multiselectfield import MultiSelectField
 
 # Create your models here.
 
